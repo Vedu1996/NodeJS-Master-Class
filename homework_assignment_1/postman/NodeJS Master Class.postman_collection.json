@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "4856ab31-046b-4987-bd39-b626aaf6c043",
+		"name": "NodeJS Master Class",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Homework assignment 1",
+			"item": [
+				{
+					"name": "Ping",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{host}}/1/hello",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"1",
+								"hello"
+							]
+						},
+						"description": "A GET Request to the server"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
