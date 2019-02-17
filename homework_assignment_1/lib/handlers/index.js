@@ -6,7 +6,8 @@ module.exports = {
         
     },
     post: {
-        'hello': modules.hello.sayHello
+        'hello': modules.hello.sayHello,
+        'hello/:name': modules.hello.sayHello,
     },
     put: {
 

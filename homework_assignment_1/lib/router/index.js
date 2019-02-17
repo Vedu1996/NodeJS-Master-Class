@@ -24,7 +24,6 @@ class Router {
     }
 
     setParams(req, trimmedPath, matchedPath) {
-        req.param = {};
         const trimmedChunks = trimmedPath.split('/');
         const matchedChunks = matchedPath.split('/');
         trimmedChunks.forEach((item, index) => {
@@ -39,6 +38,7 @@ class Router {
     }
 
     dispatch(req) {
+        req.param = {};
         if (this.routerMap.hasOwnProperty(req.method)) {
             if (
                 Object.keys(this.routerMap[req.method])
